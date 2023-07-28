@@ -1,0 +1,30 @@
+{
+  "name": "dotenvy",
+  "version": "1.0.0",
+  "description": "Read .env file from GitHub repository and inject variables to GITHUB_ENV after expanding them.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --minify --out dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosq-network/dotenvy.git"
+  },
+  "keywords": [
+    ".env",
+    "GitHub"
+  ],
+  "author": "Benoy Bose <benoybose@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cosq-network/dotenvy/issues"
+  },
+  "homepage": "https://github.com/cosq-network/dotenvy#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1"
+  }
+}

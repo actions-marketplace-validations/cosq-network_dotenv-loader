@@ -1,0 +1,12 @@
+name: dotenvy
+
+description: 'Reads an environment file (.env) and resolves variable references, exporting each variable as an environment variable.'
+
+inputs:
+  env-file:
+    description: 'Path to the environment file.'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
