@@ -5,10 +5,6 @@ async function run() {
   try {
     const envFilePath = core.getInput('env-file');
     const envVars = dotenv.config({ path: envFilePath }).parsed;
-    //core.warning(process.env);
-    for (const [varName, varValue] of Object.entries(process.env)) {
-      core.warning(`${varName}: ${varValue}`);
-    }
 
     if (envVars) {
       for (const [varName, varValue] of Object.entries(envVars)) {
