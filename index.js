@@ -6,7 +6,9 @@ async function run() {
     const envFilePath = core.getInput('env-file');
     const envVars = dotenv.config({ path: envFilePath }).parsed;
     //core.warning(process.env);
-    core.warning(process.env['GITHUB_ENV']);
+    for (const [varName, varValue] of Object.entries(process.env)) {
+      core.warning(`${varName}: ${varValue}`);
+    }
 
     if (envVars) {
       for (const [varName, varValue] of Object.entries(envVars)) {
