@@ -1,6 +1,6 @@
 {
   "name": "dotenvy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read .env file from GitHub repository and inject variables to GITHUB_ENV after expanding them.",
   "main": "index.js",
   "scripts": {

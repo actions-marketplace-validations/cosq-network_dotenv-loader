@@ -1,4 +1,4 @@
-name: dotenvy
+name: dotenv-loader
 
 description: 'Reads an environment file (.env) and resolves variable references, exporting each variable as an environment variable.'
 

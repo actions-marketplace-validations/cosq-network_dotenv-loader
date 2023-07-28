@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Read environment file and set variables
-        uses: cosq-network/dotenvy@v1.0.0
+        uses: cosq-network/dotenvy@v1.0.1
         with:
           env-file: path/to/.env
           MY_SECRET: ${{ secrets.MY_SECRET }}
