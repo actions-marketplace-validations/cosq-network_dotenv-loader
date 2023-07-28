@@ -31,7 +31,7 @@ function resolveVariableReferences(value) {
 
   value = value.replace(envReferenceRegex, (_, varName) => process.env[varName] || '');
   value = value.replace(secretsReferenceRegex, (_, varName) => core.getInput(varName, { required: true }) || '');
-  value = value.replace(varsReferenceRegex, (_, varName) => core.getState(varName) || '');
+  value = value.replace(varsReferenceRegex, (_, varName) => core.getInput(varName, { required: true }) || '');
 
   return value;
 }
